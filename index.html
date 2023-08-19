@@ -50,19 +50,19 @@
     color: #666;
   }
   .video-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -0.5rem;
-    margin-bottom: 2rem;
-  }
-  .video {
-    width: 100%;
-    padding-bottom: 56.25%;
-    position: relative;
-    margin: 0.5rem 0;
-    height: 0;
-    overflow: hidden;
-  }
+  display: block; /* Cambiamos a display block para que los videos se muestren uno debajo del otro */
+  margin: 0 auto; /* Centramos horizontalmente los videos */
+  margin-bottom: 2rem;
+  text-align: center; /* Centramos verticalmente los videos */
+}
+.video {
+  width: 80%; /* Cambiamos el ancho para que los videos no ocupen toda la pantalla */
+  padding-bottom: 56.25%;
+  position: relative;
+  margin: 1rem auto; /* Espaciado entre los videos y centrado horizontal */
+  height: 0;
+  overflow: hidden;
+}
   .video iframe, .video object, .video embed {
     position: absolute;
     top: 0;
