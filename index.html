@@ -23,7 +23,7 @@
   }
   .profile-header {
     position: absolute;
-    top: 55%; /* Centra verticalmente */
+    top: 75%; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta la posición para centrar */
   }
@@ -50,44 +50,40 @@
     color: #666;
   }
   .video-container {
-  display: block; /* Cambiamos a display block para que los videos se muestren uno debajo del otro */
-  margin: 0 auto; /* Centramos horizontalmente los videos */
-  margin-bottom: 2rem;
-  text-align: center; /* Centramos verticalmente los videos */
-}
-.video {
-  width: 100%; /* Cambiamos el ancho para que los videos no ocupen toda la pantalla */
-  padding-bottom: 50%;
-  position: relative;
-  margin: 1rem auto; /* Espaciado entre los videos y centrado horizontal */
-  height: 0;
-  overflow: hidden;
-}
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+    margin-bottom: 2rem;
+  }
+  .video {
+    width: 100%;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin: 0.5rem 0;
+    height: 0;
+    overflow: hidden;
+  }
   .video iframe, .video object, .video embed {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
   }
   .drawing {
-  width: 100%;
-  padding: 0.5rem 0;
-  margin: 0 auto; /* Esto centrará horizontalmente el contenedor de dibujo */
-  margin-bottom: 2rem;
-  text-align: center; /* Esto centrará verticalmente el contenido dentro del contenedor */
-}
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
   }
   .drawing img {
-    width: 65%;
-    max-width: 200px; /* Limitar el ancho máximo de la imagen */
+    width: 100%;
     height: auto;
     border: 1px solid #ccc;
   }
   .webtoon {
     text-align: center;
     margin: 1rem 0;
-    margin-bottom: 1rem; /* Reducir espacio entre secciones */
+    margin-bottom: 2rem;
   }
   .webtoon img {
     max-width: 100%;
@@ -123,14 +119,9 @@
     .profile-picture {
       width: 180px;
       height: 180px;
-      margin-top: -50px;
+      margin-top: -55px;
     }
     /* Agrega aquí más estilos específicos para móviles si es necesario */
-   .drawing img {
-    width: 65%;
-    max-width: 200px; /* Limitar el ancho máximo de la imagen */
-    height: auto;
-    border: 1px solid #ccc;
   }
 
   /* Estilos específicos para dispositivos de pantalla mediana y grande (tabletas y PCs) */
@@ -143,20 +134,6 @@
       height: 220px; /* Ajusta el tamaño según tu preferencia */
       margin-top: -50px;
     }
-    .drawing img {
-      max-width: 50%;
-    }
-    .webtoon img {
-    max-width: 50%;
-  }
-.video {
-  width: 65%; /* Cambiamos el ancho para que los videos no ocupen toda la pantalla */
-  padding-bottom: 56.25%;
-  position: relative;
-  margin: 1rem auto; /* Espaciado entre los videos y centrado horizontal */
-  height: 0;
-  overflow: hidden;
-}
   }
 </style>
 </head>
@@ -206,7 +183,7 @@
       </a>
     </div>
     <h2>Mis Redes Sociales</h2>
-    <div class="social" align="center">
+    <div class="social">
       <!-- Reemplaza con los enlaces a tus perfiles de redes sociales -->
       <a href="https://instagram.com/soyleduart?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://twitter.com/soyleduart" target="_blank"><i class="fab fa-twitter"></i></a>
